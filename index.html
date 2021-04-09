@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div style="perspective: 1000px;" class="col-7 m-auto my-5">
+                <p class="header">Welcome to Cinema</p>
+                <p class="header__desc">please pick your favorite movie</p>
+                <div class="cinema">
+                    <img data-movieName="joker" src="https://i.pinimg.com/originals/04/f2/9b/04f29b61e4295fc9a285620df36e9626.jpg" alt="" srcset="">
+                    <img data-movieName="toy story" src="https://wdwnt.com/wp-content/uploads/2018/11/DtGT1ZmW0AASOkw1.jpg" alt="" srcset="">
+                    <img data-movieName="avengers" src="https://i.pinimg.com/originals/1f/26/d3/1f26d3c52508b1a46235e0cf7087ab65.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div id="seat" class="row mt-5">
+            <div class="col-md-3 seat"></div>
+            <div class="col-md-5 seat"></div>
+            <div class="col-md-3 seat"></div>
+        </div>     
+    </div>
+    <div class="calculate">
+        <button>submit the order</button>
+        <p id="calcSum"></p>
+    </div>
+    <div id="emptyMovieAlert">
+        <p>Please Select a Movie</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
